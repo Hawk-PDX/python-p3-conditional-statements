@@ -6,7 +6,7 @@ def admin_login(username, password):
     else:
         return "Access denied"
        
-print(admin_login('sudo', '12345'))
+# print(admin_login('sudo', '12345'))
 
 def hows_the_weather(temperature):
     if temperature < 40:
@@ -33,18 +33,22 @@ def fizzbuzz(num):
     else:
         return num
 
-print(fizzbuzz(0))
-print(fizzbuzz(1))
-print(fizzbuzz(2))
-print(fizzbuzz(3))
-print(fizzbuzz(4))
-print(fizzbuzz(5))
-print(fizzbuzz(15))
-print(fizzbuzz(45))
+# print(fizzbuzz(0))
+# print(fizzbuzz(1))
+# print(fizzbuzz(2))
+# print(fizzbuzz(3))
+# print(fizzbuzz(4))
+# print(fizzbuzz(5))
+# print(fizzbuzz(15))
+# print(fizzbuzz(45))
 
 
 def calculator(operation, num1, num2):
     # your code here
-    pass
-
+    operators = ('+', '-', '*', '/')
+    if operation in operators:
+        return eval(f'{num1} {operation} {num2}')
+    else:
+        print("Invalid operation!")
+        return None
 
